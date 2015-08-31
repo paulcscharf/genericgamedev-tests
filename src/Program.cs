@@ -5,7 +5,7 @@ namespace genericgamedev_tests
     {
         static void Main(string[] args)
         {
-            OnCollections.DeletableListTest.Test();
+            StructByteArrayConversion.StructByteArrayTest.Test();
         }
     }
 }

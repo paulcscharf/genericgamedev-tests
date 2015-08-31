@@ -30,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OpenTK">
@@ -46,6 +47,9 @@
   <ItemGroup>
     <Compile Include="OnCollections\DeletableListTest.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="StructByteArrayConversion\Struct16Bytes.cs" />
+    <Compile Include="StructByteArrayConversion\StructByteArrayTest.cs" />
+    <Compile Include="TestHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\libs\utilities\src\Bearded.Utilities.csproj">
@@ -53,6 +57,7 @@
       <Name>Bearded.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
